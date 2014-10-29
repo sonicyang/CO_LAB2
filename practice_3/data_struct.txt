@@ -1,0 +1,71 @@
+
+data_struct.image:     file format elf32-tradbigmips
+
+Disassembly of section .text:
+
+00008000 <main>:
+    8000:	27bdffe0 	addiu	sp,sp,-32
+    8004:	3c042000 	lui	a0,0x2000
+    8008:	34860020 	ori	a2,a0,0x20
+    800c:	3c020001 	lui	v0,0x1
+    8010:	8c49806c 	lw	t1,-32660(v0)
+    8014:	2442806c 	addiu	v0,v0,-32660
+    8018:	8c470004 	lw	a3,4(v0)
+    801c:	8c480008 	lw	t0,8(v0)
+    8020:	3c020001 	lui	v0,0x1
+    8024:	8c458078 	lw	a1,-32648(v0)
+    8028:	24428078 	addiu	v0,v0,-32648
+    802c:	8c430004 	lw	v1,4(v0)
+    8030:	8c420008 	lw	v0,8(v0)
+    8034:	afa50010 	sw	a1,16(sp)
+    8038:	afa30014 	sw	v1,20(sp)
+    803c:	afa20018 	sw	v0,24(sp)
+    8040:	ac890000 	sw	t1,0(a0)
+    8044:	ac870004 	sw	a3,4(a0)
+    8048:	ac880008 	sw	t0,8(a0)
+    804c:	8fa30014 	lw	v1,20(sp)
+    8050:	8fa40018 	lw	a0,24(sp)
+    8054:	8fa20010 	lw	v0,16(sp)
+    8058:	acc20000 	sw	v0,0(a2)
+    805c:	acc30004 	sw	v1,4(a2)
+    8060:	acc40008 	sw	a0,8(a2)
+    8064:	03e00008 	jr	ra
+    8068:	27bd0020 	addiu	sp,sp,32
+Disassembly of section .rodata:
+
+0000806c <.rodata>:
+    806c:	0000003c 	0x3c
+    8070:	00000046 	rorv	zero,zero,zero
+    8074:	00000046 	rorv	zero,zero,zero
+    8078:	00000046 	rorv	zero,zero,zero
+    807c:	00000032 	tlt	zero,zero
+    8080:	00000050 	0x50
+Disassembly of section .comment:
+
+00000000 <.comment>:
+   0:	00474343 	0x474343
+   4:	3a202847 	xori	zero,s1,0x2847
+   8:	4e552920 	c3	0x552920
+   c:	332e342e 	andi	t6,t9,0x342e
+  10:	34206d69 	ori	zero,at,0x6d69
+  14:	70737364 	0x70737364
+  18:	652d362e 	0x652d362e
+  1c:	30362e30 	andi	s6,at,0x2e30
+  20:	312d3230 	andi	t5,t1,0x3230
+  24:	30373034 	andi	s7,at,0x3034
+  28:	Address 0x28 is out of bounds.
+
+Disassembly of section .reginfo:
+
+0000002c <.reginfo>:
+  2c:	a00003fc 	sb	zero,1020(zero)
+	...
+  40:	00010080 	sll	zero,at,0x2
+Disassembly of section .pdr:
+
+00000000 <.pdr>:
+   0:	00008000 	sll	s0,zero,0x0
+	...
+  14:	00000020 	add	zero,zero,zero
+  18:	0000001d 	0x1d
+  1c:	0000001f 	0x1f

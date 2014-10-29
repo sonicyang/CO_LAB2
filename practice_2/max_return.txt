@@ -1,0 +1,58 @@
+
+max_return.image:     file format elf32-tradbigmips
+
+Disassembly of section .text:
+
+00008000 <main>:
+    8000:	27bdffe8 	addiu	sp,sp,-24
+    8004:	afbf0010 	sw	ra,16(sp)
+    8008:	2404002c 	li	a0,44
+    800c:	24050057 	li	a1,87
+    8010:	0c00200c 	jal	8030 <sum>
+    8014:	24060002 	li	a2,2
+    8018:	3c032000 	lui	v1,0x2000
+    801c:	ac620000 	sw	v0,0(v1)
+    8020:	00001021 	move	v0,zero
+    8024:	8fbf0010 	lw	ra,16(sp)
+    8028:	03e00008 	jr	ra
+    802c:	27bd0018 	addiu	sp,sp,24
+
+00008030 <sum>:
+    8030:	00851021 	addu	v0,a0,a1
+    8034:	03e00008 	jr	ra
+    8038:	00461021 	addu	v0,v0,a2
+Disassembly of section .comment:
+
+00000000 <.comment>:
+   0:	00474343 	0x474343
+   4:	3a202847 	xori	zero,s1,0x2847
+   8:	4e552920 	c3	0x552920
+   c:	332e342e 	andi	t6,t9,0x342e
+  10:	34206d69 	ori	zero,at,0x6d69
+  14:	70737364 	0x70737364
+  18:	652d362e 	0x652d362e
+  1c:	30362e30 	andi	s6,at,0x2e30
+  20:	312d3230 	andi	t5,t1,0x3230
+  24:	30373034 	andi	s7,at,0x3034
+  28:	Address 0x28 is out of bounds.
+
+Disassembly of section .reginfo:
+
+0000002c <.reginfo>:
+  2c:	a000007c 	sb	zero,124(zero)
+	...
+  40:	00010030 	tge	zero,at
+Disassembly of section .pdr:
+
+00000000 <.pdr>:
+   0:	00008000 	sll	s0,zero,0x0
+   4:	80000000 	lb	zero,0(zero)
+   8:	fffffff8 	sdc3	$31,-8(ra)
+	...
+  14:	00000018 	mult	zero,zero
+  18:	0000001d 	0x1d
+  1c:	0000001f 	0x1f
+  20:	00008030 	tge	zero,zero,0x200
+	...
+  38:	0000001d 	0x1d
+  3c:	0000001f 	0x1f
